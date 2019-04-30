@@ -13,6 +13,8 @@ sockfd = socket(AF_INET,SOCK_DGRAM)
 
 while True:
     data = input("消息:")
+    if not data:
+        break
     sockfd.sendto(data.encode(),ADDR)
     data,addr = sockfd.recvfrom(1024)
     print("从服务端收到：",data.decode())
