@@ -5,7 +5,8 @@ import  sys
 #test
 
 HOST = '127.0.0.1'
-PORT = 8888
+PORT = 6666
+
 ADDR = (HOST,PORT)
 
 #创建套接字
